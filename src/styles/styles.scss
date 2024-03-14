@@ -1,0 +1,77 @@
+// Variables
+$dark-cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+$dark-blue: hsl(212, 21%, 14%);
+$gray-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+$gray: hsla(0, 0%, 0%, 0.6);
+$montserrat: "Montserrat", sans-serif;
+$fraunces: "Fraunces", sans-serif;
+
+body {
+    background-color: $cream;
+    font-family: $montserrat;
+    font-size: 14px;
+    .main-container {
+        margin: 2rem .5rem;
+        background-color: $white;
+        border-radius: .5rem;
+        img {
+            max-width: 100%;
+            border-radius: .5rem .5rem 0 0;
+        }
+        .info-container {
+            padding: 1.5rem;
+            .prod-type {
+                font-size: 12px;
+                color: $gray;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: .3rem;
+            }
+            h2 {
+                margin: .7rem 0;
+                font-family: $fraunces;
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+            p {
+                color: $gray;
+                font-family: $montserrat;
+                line-height: 1.4rem;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .price {
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .new-price {
+                    font-family: $fraunces;
+                    font-size: 2.3rem;
+                    font-weight: 700;
+                    color: $dark-cyan;
+                }
+                .old-price {
+                    text-decoration: line-through;
+                    font-weight: 500;
+                    color: $gray;
+                }
+            }
+            button {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                min-width: 100%;
+                padding: 1rem;
+                border: none;
+                border-radius: .5rem;
+                background-color: $dark-cyan;
+                color: $white;
+                font-family: $montserrat;
+                font-weight: 700;
+            }
+        }
+    }
+}
