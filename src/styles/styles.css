@@ -1,7 +1,7 @@
 body {
-  background-color: hsl(30, 38%, 92%);
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
 }
 body .main-container {
   margin: 2rem 0.5rem;
@@ -56,11 +56,11 @@ body .main-container .info-container .price .old-price {
   color: hsla(0, 0%, 0%, 0.6);
 }
 body .main-container .info-container button {
+  min-width: 100%;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
-  min-width: 100%;
-  padding: 1rem;
   border: none;
   border-radius: 0.5rem;
   background-color: hsl(158, 36%, 37%);
@@ -92,8 +92,8 @@ body .main-container .info-container button {
     display: none;
   }
   body .main-container .img-container .img-desktop {
-    display: block;
     min-height: 100%;
+    display: block;
   }
   body .main-container .info-container {
     width: 45%;
